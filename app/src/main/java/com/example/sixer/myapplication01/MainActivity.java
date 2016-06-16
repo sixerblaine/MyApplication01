@@ -132,8 +132,8 @@ public class MainActivity extends AppCompatActivity {
         File tmpFile = new File(sdPath, curSong);
         Uri uri = Uri.fromFile(tmpFile);
 
-        Log.d("sixer", uri.toString());
-        Log.d("sixer", Environment.getExternalStorageDirectory().getAbsolutePath());
+        Log.d("sixer", uri.toString()); // file:///storage/emulated/0/Music/ninelie.mp3
+        Log.d("sixer", Environment.getExternalStorageDirectory().getAbsolutePath());    //  /storage/emulated/0
 
         mp = new MediaPlayer();
 
