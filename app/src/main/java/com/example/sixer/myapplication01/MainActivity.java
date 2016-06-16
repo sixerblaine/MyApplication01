@@ -96,8 +96,6 @@ public class MainActivity extends AppCompatActivity {
 
         //endregion
 
-        Log.d("sixer", Environment.getExternalStorageDirectory().getPath()); //  /storage/emulated/0
-
         File sdCardRoot = Environment.getExternalStorageDirectory();
         File yourDir = new File(sdCardRoot, "/Music/");
 
@@ -163,7 +161,6 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
 
 //        builder.create().show();
         Log.d("sixer", "end of the onCreate()");
